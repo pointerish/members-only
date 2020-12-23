@@ -1,0 +1,14 @@
+<%= render partial: 'navbar' %>
+<div class="main-content">
+  <h1>See all Posts</h1>
+    <% @posts.each do |post| %>
+        <div class="post-card">
+          <div class="post-title">
+            <%= link_to(post.title, "posts/show?id=#{post.id}") %>
+          </div>
+          <div class="posted-by">
+            <% if user_signed_in? %> Posted by <%= post.user.email %><% end %>
+          </div>
+        </div>
+    <% end %>
+</div>

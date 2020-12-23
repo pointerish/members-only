@@ -1,0 +1,11 @@
+<%= render partial: 'navbar' %>
+
+<div class="create-post">
+<h1>Create New Post</h1>
+
+<%= form_with model: @post do |form| %>
+    <%= form.text_field :title, size: "59x10" %><br/><br/>
+    <%= form.text_area :body, size: "60x10" %><br/>
+    <%= form.submit %>
+  <% end %>
+</div>
