@@ -1,24 +1,73 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/RoR-red)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# MembersOnly
 
-Things you may want to cover:
+> A small app where Users can create posts. The authors of the posts are only visible for logged in users.
 
-* Ruby version
+<br/>
 
-* System dependencies
+<img src="app/assets/images/main.png"/>
+<img src="app/assets/images/login.png"/>
+<img src="app/assets/images/signup.png"/>
 
-* Configuration
+There can be many users. Users can create many posts.
 
-* Database creation
+## Built With
 
-* Database initialization
+- Ruby 2.7.2
+- Rails 6
 
-* How to run the test suite
+<!-- ## Live Demo
 
-* Services (job queues, cache servers, search engines, etc.)
+[Live Demo Link](https://livedemo.com) -->
 
-* Deployment instructions
+## Getting Started
 
-* ...
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- `ruby 2.7.2 (rbenv preferred)`
+- `bundle` gem installed
+- `rails` gem installed
+- `yarn` installed
+
+### Setup
+
+- clone the repo
+
+### Install
+
+- `cd` into the repo
+- run `bundle install`
+- run `yarn`
+- run `rails db:migrate`
+- run `rails server`
+
+## Author
+
+👤 **Josias Alvarado**
+
+- GitHub: [@pointerish](https://github.com/pointerish)
+- Twitter: [@pointerish](https://twitter.com/pointerish)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/josias-alvarado/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/pointerish/members-only/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Odin Project
+- Microverse
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
