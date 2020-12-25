@@ -11,6 +11,32 @@
   </head>
 
   <body>
+    <nav>
+      <div class="brand-name">
+          <%= link_to('MembersOnly', root_path) %>  
+      </div>
+      <div class="nav-links">
+        <div class="nav-link">
+          <% if user_signed_in? %> 
+            <%= @post.user.email %>
+          <% else %>
+            <%= link_to('Login', new_user_session_path) %>  
+          <% end %>
+          </div>
+        <div class="nav-link">
+          <% if user_signed_in? %> 
+            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+            <% else %>
+              <%= link_to "Create Account", "/users/sign_up" %>
+          <% end %>
+          </div>
+        <div class="nav-link">
+          <% if user_signed_in? %> 
+            <%= link_to('New Post', '/posts/new') %>
+          <% end %>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

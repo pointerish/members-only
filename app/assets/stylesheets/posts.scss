@@ -49,7 +49,18 @@ nav {
   }
 }
 
+.login-form,
+.signup-form,
 .create-post,
+.main-content,
 .post-container {
   margin-top: 5rem;
+}
+
+.post-card {
+  margin: 2rem;
+}
+
+.error-message {
+  color: red;
 }
