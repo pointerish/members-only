@@ -17,23 +17,13 @@
       </div>
       <div class="nav-links">
         <div class="nav-link">
-          <% if user_signed_in? %> 
-            <%= @post.user.email %>
-          <% else %>
-            <%= link_to('Login', new_user_session_path) %>  
-          <% end %>
-          </div>
+          <%= logged_user(@post)['user'] %>
+        </div>
         <div class="nav-link">
-          <% if user_signed_in? %> 
-            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-            <% else %>
-              <%= link_to "Create Account", "/users/sign_up" %>
-          <% end %>
-          </div>
+          <%= logged_user(@post)['logout'] %>
+        </div>
         <div class="nav-link">
-          <% if user_signed_in? %> 
-            <%= link_to('New Post', '/posts/new') %>
-          <% end %>
+          <%= logged_user(@post)['new_post'] %>
         </div>
       </div>
     </nav>

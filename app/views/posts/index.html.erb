@@ -6,7 +6,7 @@
             <%= link_to(post.title, "posts/show?id=#{post.id}") %>
           </div>
           <div class="posted-by">
-            <% if user_signed_in? %> Posted by <%= post.user.email %><% end %>
+            <%= posted_by(post) %>
           </div>
         </div>
     <% end %>
