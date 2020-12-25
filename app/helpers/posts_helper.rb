@@ -1,5 +1,5 @@
 module PostsHelper
-  def logged_user(post)
+  def logged_user
     if user_signed_in?
       { 'user' => current_user.email,
         'logout' => link_to('Logout', destroy_user_session_path, method: :delete),
