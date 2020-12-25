@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+:root {
+  background-color: lightblue;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 99;
+
+  .brand-name {
+    font-size: 2rem;
+    font-weight: bolder;
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      text-decoration-color: red;
+    }
+  }
+
+  .brand-name:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+
+  .nav-links {
+    display: flex;
+
+    .nav-link {
+      font-size: 1rem;
+      margin: 0.6rem;
+      margin-right: 2rem;
+
+      a {
+        text-decoration: underline;
+        text-decoration-color: red;
+        color: black;
+      }
+    }
+  }
+}
+
+.login-form,
+.signup-form,
+.create-post,
+.main-content,
+.post-container {
+  margin-top: 5rem;
+}
+
+.post-card {
+  margin: 2rem;
+}
+
+.error-message {
+  color: red;
+}

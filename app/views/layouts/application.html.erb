@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MembersOnly</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <div class="brand-name">
+          <%= link_to('MembersOnly', root_path) %>  
+      </div>
+      <div class="nav-links">
+        <div class="nav-link">
+          <%= logged_user['user'] %>
+        </div>
+        <div class="nav-link">
+          <%= logged_user['logout'] %>
+        </div>
+        <div class="nav-link">
+          <%= logged_user['new_post'] %>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
