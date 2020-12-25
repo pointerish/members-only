@@ -3,7 +3,7 @@
     <% @posts.each do |post| %>
         <div class="post-card">
           <div class="post-title">
-            <%= link_to(post.title, "posts/show?id=#{post.id}") %>
+            <%= link_to(post.title, "/posts/#{post.id}") %>
           </div>
           <div class="posted-by">
             <%= posted_by(post) %>
